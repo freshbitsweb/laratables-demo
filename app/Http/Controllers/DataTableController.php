@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use Freshbitsweb\Laratables\Laratables;
 use App\Product;
+use Freshbitsweb\Laratables\Laratables;
 
 class DataTableController extends Controller
 {
