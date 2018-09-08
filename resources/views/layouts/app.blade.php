@@ -50,12 +50,6 @@
                                 Demo Source
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://docs.freshbits.in/laratables" target="_blank">
-                                Documentation
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

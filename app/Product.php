@@ -22,16 +22,4 @@ class Product extends Model
     {
         return $this->belongsTo('App\ProductCategory');
     }
-
-    /**
-     * Eager load product category of the product for displaying in the datatables.
-     *
-     * @return callable
-     */
-    public static function laratablesProductRelationQuery()
-    {
-        return function ($query) {
-            $query->with('productCategory');
-        };
-    }
 }
