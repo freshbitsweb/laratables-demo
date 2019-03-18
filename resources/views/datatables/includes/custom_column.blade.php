@@ -18,7 +18,7 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
-                ajax: "{{ route('custom_column_datatables_users_data') }}",
+                ajax: "{{ route('get_custom_column_attributes_data') }}",
                 columns: [
                     { name: 'name' },
                     { name: 'mobile' },

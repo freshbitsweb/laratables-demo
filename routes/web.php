@@ -15,10 +15,10 @@ Route::get('/', 'DataTableController@index')->name('home');
 
 Route::get('/get-simple-datatables-data', 'DataTableController@getSimpleDatatablesData')->name('simple_datatables_users_data');
 
-Route::get('/get-custom-column-datatables-data', 'DataTableController@getCustomColumnDatatablesData')->name('custom_column_datatables_users_data');
-
 Route::get('/get-relationship-column-datatables-data', 'DataTableController@getRelationshipColumnDatatablesData')->name('relationship_column_datatables_users_data');
 
 Route::get('/get-extra-data-datatables-attributes-data', 'DataTableController@getExtraDataDatatablesAttributesData')->name('get_extra_data_datatables_attributes_data');
 
 Route::get('/get-controlling-the-query-attributes-data', 'DataTableController@getControllingTheQueryAttributesData')->name('get_controlling_the_query_attributes_data');
+
+Route::get('/get-custom-column-attributes-data', 'DataTableController@getCustomColumnAttributesData')->name('get_custom_column_attributes_data');

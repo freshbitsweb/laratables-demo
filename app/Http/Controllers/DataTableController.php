@@ -29,16 +29,6 @@ class DataTableController extends Controller
     }
 
     /**
-     * return data of the Custom columns datatables.
-     *
-     * @return Json
-     */
-    public function getCustomColumnDatatablesData()
-    {
-        return Laratables::recordsOf(User::class);
-    }
-
-    /**
      * return data of the relation columns datatables.
      *
      * @return Json
@@ -68,4 +58,13 @@ class DataTableController extends Controller
         return Laratables::recordsOf(User::class);
     }
 
+    /**
+     * Returns the action column html for datatables.
+     *
+     * @return Json
+     */
+    public function getCustomColumnAttributesData()
+    {
+        return Laratables::recordsOf(User::class);
+    }
 }
