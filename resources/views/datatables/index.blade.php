@@ -14,6 +14,7 @@
 
                         @include('datatables.controlling_the_query')
                         @include('datatables.custom_columns')
+                        @include('datatables.relationship_column')
 
                     </div>
                 </div>

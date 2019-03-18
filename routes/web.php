@@ -17,4 +17,4 @@ Route::get('/get-controlling-the-query-attributes-data', 'ControllingQueryContro
 
 Route::get('/get-custom-column-attributes-data', 'CustomColumnController@customColumn')->name('custom-column');
 
-Route::get('/get-relationship-column-attributes-data', 'DataTableController@getCustomColumnAttributesData')->name('get-relationship-column-attributes-data');
+Route::get('/get-relationship-column-attributes-data', 'RelationshipColumnController@relationshipColumn')->name('relationship-column');

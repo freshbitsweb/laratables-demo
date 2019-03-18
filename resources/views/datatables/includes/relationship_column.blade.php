@@ -16,7 +16,7 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
-                ajax: "{{ route('relationship_column_datatables_users_data') }}",
+                ajax: "{{ route('relationship-column') }}",
                 columns: [
                     { name: 'id' },
                     { name: 'name' },
