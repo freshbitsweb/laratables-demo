@@ -22,7 +22,7 @@
 
                             <div id="query-controlling" class="collapse" aria-labelledby="controlling-query" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    @include('datatables.includes.controlling_query')
+                                    @include('datatables.includes.controlling_the_query')
                                 </div>
                             </div>
                         </div>

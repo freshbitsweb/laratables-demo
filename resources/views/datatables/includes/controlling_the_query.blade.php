@@ -18,14 +18,15 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
-                ajax: "{{ route('get_controlling_the_query_attributes_data') }}",
+                searching: false,
+                ajax: "{{ route('controlling_the_query') }}",
                 columns: [
-                    { name: 'id' },
-                    { name: 'name' },
-                    { name: 'mobile' },
-                    { name: 'email' },
-                    { name: 'gender' },
-                    { name: 'active' },
+                    { name: 'id', orderable: false },
+                    { name: 'name', orderable: false },
+                    { name: 'mobile', orderable: false },
+                    { name: 'email', orderable: false },
+                    { name: 'gender', orderable: false },
+                    { name: 'active', orderable: false },
                 ],
             });
         });
