@@ -16,6 +16,17 @@ class User extends Model
     ];
 
     /**
+     * Fetch only active users in the datatables.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public static function laratablesQueryConditions($query)
+    {
+        return $query->where('active', true);
+    }
+
+    /**
      * Returns the action column html for datatables.
      *
      * @param \App\User

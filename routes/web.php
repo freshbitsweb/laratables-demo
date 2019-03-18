@@ -20,3 +20,5 @@ Route::get('/get-custom-column-datatables-data', 'DataTableController@getCustomC
 Route::get('/get-relationship-column-datatables-data', 'DataTableController@getRelationshipColumnDatatablesData')->name('relationship_column_datatables_users_data');
 
 Route::get('/get-extra-data-datatables-attributes-data', 'DataTableController@getExtraDataDatatablesAttributesData')->name('get_extra_data_datatables_attributes_data');
+
+Route::get('/get-controlling-the-query-attributes-data', 'DataTableController@getControllingTheQueryAttributesData')->name('get_controlling_the_query_attributes_data');

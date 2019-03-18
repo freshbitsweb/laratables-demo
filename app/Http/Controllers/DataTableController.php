@@ -57,4 +57,15 @@ class DataTableController extends Controller
     {
         return Laratables::recordsOf(User::class);
     }
+
+    /**
+     * Fetch only active users in the datatables.
+     *
+     * @return Json
+     */
+    public function getControllingTheQueryAttributesData()
+    {
+        return Laratables::recordsOf(User::class);
+    }
+
 }
