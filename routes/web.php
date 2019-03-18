@@ -13,6 +13,8 @@
 
 Route::get('/', 'DataTableController@index')->name('home');
 
-Route::get('/get-controlling-the-query-attributes-data', 'ControllingQuery@controllingTheQuery')->name('controlling_the_query');
+Route::get('/get-controlling-the-query-attributes-data', 'ControllingQueryController@controllingTheQuery')->name('controlling-the-query');
 
-Route::get('/get-custom-column-attributes-data', 'DataTableController@getCustomColumnAttributesData')->name('get_custom_column_attributes_data');
+Route::get('/get-custom-column-attributes-data', 'CustomColumnController@customColumn')->name('custom-column');
+
+Route::get('/get-relationship-column-attributes-data', 'DataTableController@getCustomColumnAttributesData')->name('get-relationship-column-attributes-data');

@@ -47,14 +47,4 @@ class DataTableController extends Controller
     {
         return Laratables::recordsOf(User::class);
     }
-
-    /**
-     * Returns the action column html for datatables.
-     *
-     * @return Json
-     */
-    public function getCustomColumnAttributesData()
-    {
-        return Laratables::recordsOf(User::class);
-    }
 }

@@ -5,7 +5,6 @@
             <th>Mobile</th>
             <th>Email</th>
             <th>Gender</th>
-            <th>Country</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -18,13 +17,12 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
-                ajax: "{{ route('get_custom_column_attributes_data') }}",
+                ajax: "{{ route('custom-column') }}",
                 columns: [
                     { name: 'name' },
                     { name: 'mobile' },
                     { name: 'email' },
                     { name: 'gender' },
-                    { name: 'country' },
                     { name: 'action', orderable: false, searchable: false }
                 ]
             });

@@ -19,7 +19,7 @@
                 processing: true,
                 responsive: true,
                 searching: false,
-                ajax: "{{ route('controlling_the_query') }}",
+                ajax: "{{ route('controlling-the-query') }}",
                 columns: [
                     { name: 'id', orderable: false },
                     { name: 'name', orderable: false },

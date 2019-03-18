@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\ControllingQuery\User;
 use Freshbitsweb\Laratables\Laratables;
 
-class ControllingQuery extends Controller
+class ControllingQueryController extends Controller
 {
     /**
      * Fetch only active users in the datatables.
