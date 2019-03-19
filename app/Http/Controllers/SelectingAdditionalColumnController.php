@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\SelectingAdditionalColumn\User;
 use Freshbitsweb\Laratables\Laratables;
+use App\Models\SelectingAdditionalColumn\User;
 
 class SelectingAdditionalColumnController extends Controller
 {

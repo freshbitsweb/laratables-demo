@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Freshbitsweb\Laratables\Laratables;
-use App\SpecifyingAdditionalSearchableColumn\User;
+use App\Models\SpecifyingAdditionalSearchableColumn\User;
 
 class SpecifyingAdditionalSearchableColumnController extends Controller
 {

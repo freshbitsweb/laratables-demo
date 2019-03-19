@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Ordering\User;
+use App\Models\Ordering\User;
 use Illuminate\Http\Request;
 use Freshbitsweb\Laratables\Laratables;
 

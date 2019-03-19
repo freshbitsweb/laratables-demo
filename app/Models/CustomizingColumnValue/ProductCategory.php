@@ -1,6 +1,6 @@
 <?php
 
-namespace App\CustomizingColumnValue;
+namespace App\Models\CustomizingColumnValue;
 
 use Illuminate\Database\Eloquent\Model;
 

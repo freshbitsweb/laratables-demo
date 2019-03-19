@@ -1,6 +1,6 @@
 <?php
 
-namespace App\CustomColumn;
+namespace App\Models\CustomColumn;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,7 +18,7 @@ class User extends Model
     /**
      * Returns the action column html for datatables.
      *
-     * @param \App\User
+     * @param \App\Models\CustomColumn\User
      * @return string
      */
     public static function laratablesCustomAction($user)
@@ -29,7 +29,7 @@ class User extends Model
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\User
+     * @param \App\Models\CustomColumn\User
      * @return string
      */
     public static function laratablesCustomName($user)

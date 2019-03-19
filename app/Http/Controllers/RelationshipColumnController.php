@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\RelationshipColumn\Product;
 use Freshbitsweb\Laratables\Laratables;
+use App\Models\RelationshipColumn\Product;
 
 class RelationshipColumnController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Ordering;
+namespace App\Models\ModifyFetchedRecord;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,19 +16,24 @@ class User extends Model
     ];
 
     /**
-     * first_name column should be used for sorting when name column is selected in Datatables.
+     * Set user full name on the collection.
      *
-     * @return string
+     * @param \Illuminate\Support\Collection
+     * @return \Illuminate\Support\Collection
      */
-    public static function laratablesOrderFirstName()
+    public static function laratablesModifyCollection($users)
     {
-        return 'first_name';
+        return $users->map(function ($user) {
+            $user->full_name = $user->first_name . ' '. $user->last_name;
+
+            return $user;
+        });
     }
 
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\Ordering\User
+     * @param \App\Models\ModifyFetchedRecord\User
      * @return string
      */
     public static function laratablesCustomName($user)

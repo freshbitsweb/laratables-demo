@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ModifyFetchedRecord;
+namespace App\Models\SelectingAdditionalColumn;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,24 +16,20 @@ class User extends Model
     ];
 
     /**
-     * Set user full name on the collection.
+     * Returns the action column html for datatables.
      *
-     * @param \Illuminate\Support\Collection
-     * @return \Illuminate\Support\Collection
+     * @param \App\Models\SelectingAdditionalColumn\User
+     * @return string
      */
-    public static function laratablesModifyCollection($users)
+    public static function laratablesCustomAction($user)
     {
-        return $users->map(function ($user) {
-            $user->full_name = $user->first_name . ' '. $user->last_name;
-
-            return $user;
-        });
+        return view('datatables.includes.action')->render();
     }
 
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\ModifyFetchedRecord\User
+     * @param \App\Models\SelectingAdditionalColumn\User
      * @return string
      */
     public static function laratablesCustomName($user)
@@ -59,5 +55,27 @@ class User extends Model
     public static function laratablesOrderName()
     {
         return 'first_name';
+    }
+
+    /**
+     * Returns string status from boolean status for the datatables.
+     *
+     * @return string
+     */
+    public function laratablesActive()
+    {
+        return $this->active ? 'Active' : 'Inactive';
+    }
+
+    /**
+     * Returns the data attribute for row id of the user.
+     *
+     * @return array
+     */
+    public function laratablesRowData()
+    {
+        return [
+            'id' => $this->id,
+        ];
     }
 }

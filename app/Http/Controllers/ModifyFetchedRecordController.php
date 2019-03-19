@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ModifyFetchedRecord\User;
 use Freshbitsweb\Laratables\Laratables;
+use App\Models\ModifyFetchedRecord\User;
 
 class ModifyFetchedRecordController extends Controller
 {

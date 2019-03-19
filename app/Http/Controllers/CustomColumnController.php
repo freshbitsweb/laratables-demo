@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\CustomColumn\User;
 use Illuminate\Http\Request;
+use App\Models\CustomColumn\User;
 use Freshbitsweb\Laratables\Laratables;
 
 class CustomColumnController extends Controller
@@ -17,5 +17,4 @@ class CustomColumnController extends Controller
     {
         return Laratables::recordsOf(User::class);
     }
-
 }

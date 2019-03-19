@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Searching\User;
 use Illuminate\Http\Request;
+use App\Models\Searching\User;
 use Freshbitsweb\Laratables\Laratables;
 
 class SearchingController extends Controller

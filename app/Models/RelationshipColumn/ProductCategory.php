@@ -1,6 +1,6 @@
 <?php
 
-namespace App\RelationshipColumn;
+namespace App\Models\RelationshipColumn;
 
 use Illuminate\Database\Eloquent\Model;
 

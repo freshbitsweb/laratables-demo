@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Searching;
+namespace App\Models\ControllingQuery;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,9 +16,20 @@ class User extends Model
     ];
 
     /**
+     * Fetch only active users in the datatables.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public static function laratablesQueryConditions($query)
+    {
+        return $query->where('active', true);
+    }
+
+    /**
      * Returns the name column value for datatables.
      *
-     * @param \App\Searching\User
+     * @param \App\Models\ControllingQuery\User
      * @return string
      */
     public static function laratablesCustomName($user)
@@ -57,16 +68,14 @@ class User extends Model
     }
 
     /**
-     * Adds the condition for searching the name of the user in the query.
+     * Returns the data attribute for row id of the user.
      *
-     * @param \Illuminate\Database\Eloquent\Builder
-     * @param string search term
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @return array
      */
-    public static function laratablesSearchName($query, $searchValue)
+    public function laratablesRowData()
     {
-        return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
-        ->orWhere('last_name', 'like', '%'. $searchValue. '%')
-    ;
+        return [
+            'id' => $this->id,
+        ];
     }
 }

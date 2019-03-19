@@ -1,8 +1,7 @@
 <?php
 
-namespace App\CustomizingColumnValue;
+namespace App\Models\RelationshipColumn;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
@@ -21,16 +20,6 @@ class Product extends Model
      */
     public function productCategory()
     {
-        return $this->belongsTo('App\ProductCategory');
-    }
-
-    /**
-     * Returns truncated name for the datatables.
-     *
-     * @return string
-     */
-    public function laratablesDescription()
-    {
-        return Str::limit($this->description, 100);
+        return $this->belongsTo('App\Models\RelationshipColumn\ProductCategory');
     }
 }

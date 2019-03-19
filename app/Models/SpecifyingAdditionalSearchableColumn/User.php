@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SpecifyingAdditionalSearchableColumn;
+namespace App\Models\SpecifyingAdditionalSearchableColumn;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,7 +18,7 @@ class User extends Model
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\SpecifyingAdditionalSearchableColumn\User
+     * @param \App\Models\SpecifyingAdditionalSearchableColumn\User
      * @return string
      */
     public static function laratablesCustomName($user)

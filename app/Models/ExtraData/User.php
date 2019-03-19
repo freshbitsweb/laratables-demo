@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ExtraData;
+namespace App\Models\ExtraData;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -28,7 +28,7 @@ class User extends Model
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\ExtraData\User
+     * @param \App\Models\ExtraData\User
      * @return string
      */
     public static function laratablesCustomName($user)

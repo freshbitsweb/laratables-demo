@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ControllingQuery\User;
+use App\Models\ControllingQuery\User;
 use Freshbitsweb\Laratables\Laratables;
 
 class ControllingQueryController extends Controller

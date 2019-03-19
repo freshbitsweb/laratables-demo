@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ControllingQuery;
+namespace App\Models\Ordering;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,20 +16,19 @@ class User extends Model
     ];
 
     /**
-     * Fetch only active users in the datatables.
+     * first_name column should be used for sorting when name column is selected in Datatables.
      *
-     * @param \Illuminate\Database\Eloquent\Builder
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @return string
      */
-    public static function laratablesQueryConditions($query)
+    public static function laratablesOrderFirstName()
     {
-        return $query->where('active', true);
+        return 'first_name';
     }
 
     /**
      * Returns the name column value for datatables.
      *
-     * @param \App\User
+     * @param \App\Models\Ordering\User
      * @return string
      */
     public static function laratablesCustomName($user)
@@ -55,27 +54,5 @@ class User extends Model
     public static function laratablesOrderName()
     {
         return 'first_name';
-    }
-
-    /**
-     * Returns string status from boolean status for the datatables.
-     *
-     * @return string
-     */
-    public function laratablesActive()
-    {
-        return $this->active ? 'Active' : 'Inactive';
-    }
-
-    /**
-     * Returns the data attribute for row id of the user.
-     *
-     * @return array
-     */
-    public function laratablesRowData()
-    {
-        return [
-            'id' => $this->id,
-        ];
     }
 }

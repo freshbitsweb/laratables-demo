@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SelectingAdditionalColumn;
+namespace App\Models\Searching;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,20 +16,9 @@ class User extends Model
     ];
 
     /**
-     * Returns the action column html for datatables.
-     *
-     * @param \App\User
-     * @return string
-     */
-    public static function laratablesCustomAction($user)
-    {
-        return view('datatables.includes.action')->render();
-    }
-
-    /**
      * Returns the name column value for datatables.
      *
-     * @param \App\User
+     * @param \App\Models\Searching\User
      * @return string
      */
     public static function laratablesCustomName($user)
@@ -68,14 +57,16 @@ class User extends Model
     }
 
     /**
-     * Returns the data attribute for row id of the user.
+     * Adds the condition for searching the name of the user in the query.
      *
-     * @return array
+     * @param \Illuminate\Database\Eloquent\Builder
+     * @param string search term
+     * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function laratablesRowData()
+    public static function laratablesSearchName($query, $searchValue)
     {
-        return [
-            'id' => $this->id,
-        ];
+        return $query->orWhere('first_name', 'like', '%'. $searchValue. '%')
+        ->orWhere('last_name', 'like', '%'. $searchValue. '%')
+    ;
     }
 }

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\ExtraData\User;
 use Illuminate\Http\Request;
+use App\Models\ExtraData\User;
 use Freshbitsweb\Laratables\Laratables;
 
 class ExtraDataController extends Controller
