@@ -28,3 +28,6 @@ Route::get('/get-ordering-attributes-data', 'OrderingController@ordering')->name
 Route::get('/get-selecting-additional-column-attributes-data', 'SelectingAdditionalColumnController@selectingAdditionalColumn')->name('selecting-additional-column');
 
 Route::get('/get-specifying-additional-searchable-column-attributes-data', 'SpecifyingAdditionalSearchableColumnController@specifyingAdditionalSearchableColumn')->name('specifying-additional-searchable-column');
+
+
+Route::get('/get-modify-fetched-record-attributes-data', 'ModifyFetchedRecordController@modifyFetchedRecord')->name('modify-fetched-record');

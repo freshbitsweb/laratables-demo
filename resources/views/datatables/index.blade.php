@@ -20,6 +20,7 @@
                         @include('datatables.ordering')
                         @include('datatables.selecting_additional_column')
                         @include('datatables.specifying_additional_searchable_column')
+                        @include('datatables.modify_fetched_record')
 
                     </div>
                 </div>
