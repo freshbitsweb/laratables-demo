@@ -16,11 +16,12 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
+                searching: false,
                 ajax: "{{ route('relationship-column') }}",
                 columns: [
-                    { name: 'id' },
-                    { name: 'name' },
-                    { name: 'description' },
+                    { name: 'id', orderable: false },
+                    { name: 'name', orderable: false },
+                    { name: 'description', orderable: false },
                     { name: 'productCategory.name', orderable: false },
                 ],
             });

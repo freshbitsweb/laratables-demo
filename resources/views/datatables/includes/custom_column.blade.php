@@ -17,13 +17,14 @@
                 serverSide: true,
                 processing: true,
                 responsive: true,
+                searching: false,
                 ajax: "{{ route('custom-column') }}",
                 columns: [
-                    { name: 'name' },
-                    { name: 'mobile' },
-                    { name: 'email' },
-                    { name: 'gender' },
-                    { name: 'action', orderable: false, searchable: false }
+                    { name: 'name', orderable: false},
+                    { name: 'mobile', orderable: false},
+                    { name: 'email', orderable: false},
+                    { name: 'gender', orderable: false},
+                    { name: 'action', orderable: false }
                 ]
             });
         });
