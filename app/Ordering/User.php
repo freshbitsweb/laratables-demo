@@ -55,14 +55,4 @@ class User extends Model
     {
         return 'first_name';
     }
-
-    /**
-     * Returns string status from boolean status for the datatables.
-     *
-     * @return string
-     */
-    public function laratablesActive()
-    {
-        return $this->active ? 'Active' : 'Inactive';
-    }
 }
