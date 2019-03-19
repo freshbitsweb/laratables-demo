@@ -68,16 +68,6 @@ class User extends Model
     }
 
     /**
-     * Specify row class name for datatables.
-     *
-     * @return string
-     */
-    public function laratablesRowClass()
-    {
-        return $this->active ? 'text-success' : 'text-danger';
-    }
-
-    /**
      * Returns the data attribute for row id of the user.
      *
      * @return array
