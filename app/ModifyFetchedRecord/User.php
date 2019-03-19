@@ -15,7 +15,6 @@ class User extends Model
         'first_name', 'last_name', 'mobile', 'email', 'gender', 'country', 'active',
     ];
 
-
     /**
      * Set user full name on the collection.
      *

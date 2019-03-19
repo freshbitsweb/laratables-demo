@@ -25,8 +25,6 @@ class User extends Model
         return $this->active ? 'text-success' : 'text-warning';
     }
 
-
-
     /**
      * Returns the name column value for datatables.
      *
