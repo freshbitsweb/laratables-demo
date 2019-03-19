@@ -29,5 +29,6 @@ Route::get('/get-selecting-additional-column-attributes-data', 'SelectingAdditio
 
 Route::get('/get-specifying-additional-searchable-column-attributes-data', 'SpecifyingAdditionalSearchableColumnController@specifyingAdditionalSearchableColumn')->name('specifying-additional-searchable-column');
 
-
 Route::get('/get-modify-fetched-record-attributes-data', 'ModifyFetchedRecordController@modifyFetchedRecord')->name('modify-fetched-record');
+
+Route::get('/get-extra-data-attributes-data', 'ExtraDataController@extraData')->name('extra-data');

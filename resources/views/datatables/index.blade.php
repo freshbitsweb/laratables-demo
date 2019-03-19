@@ -21,6 +21,7 @@
                         @include('datatables.selecting_additional_column')
                         @include('datatables.specifying_additional_searchable_column')
                         @include('datatables.modify_fetched_record')
+                        @include('datatables.extra_data_datatables_attribute')
 
                     </div>
                 </div>
