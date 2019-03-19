@@ -25,3 +25,4 @@ Route::get('/get-searching-attributes-data', 'SearchingController@searching')->n
 
 Route::get('/get-ordering-attributes-data', 'OrderingController@ordering')->name('ordering');
 
+Route::get('/get-selecting-additional-column-attributes-data', 'SelectingAdditionalColumnController@selectingAdditionalColumn')->name('selecting-additional-column');

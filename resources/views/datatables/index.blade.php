@@ -18,6 +18,7 @@
                         @include('datatables.customizing_column_values')
                         @include('datatables.searching')
                         @include('datatables.ordering')
+                        @include('datatables.selecting_additional_column')
 
                     </div>
                 </div>
