@@ -23,3 +23,5 @@ Route::get('/get-customizing-column-value-attributes-data', 'CustomizingColumnVa
 
 Route::get('/get-searching-attributes-data', 'SearchingController@searching')->name('searching');
 
+Route::get('/get-ordering-attributes-data', 'OrderingController@ordering')->name('ordering');
+
