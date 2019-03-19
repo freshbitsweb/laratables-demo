@@ -20,3 +20,6 @@ Route::get('/get-custom-column-attributes-data', 'CustomColumnController@customC
 Route::get('/get-relationship-column-attributes-data', 'RelationshipColumnController@relationshipColumn')->name('relationship-column');
 
 Route::get('/get-customizing-column-value-attributes-data', 'CustomizingColumnValueController@customizingColumnValue')->name('customizing-column-value');
+
+Route::get('/get-searching-attributes-data', 'SearchingController@searching')->name('searching');
+

@@ -16,6 +16,7 @@
                         @include('datatables.custom_columns')
                         @include('datatables.relationship_column')
                         @include('datatables.customizing_column_values')
+                        @include('datatables.searching')
 
                     </div>
                 </div>
